@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -155,7 +156,7 @@ td, th {
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *, :after, :before {
-    color: black !important;
+    color: #000 !important;
     text-shadow: none !important;
     background: 0 0 !important;
     -webkit-box-shadow: none !important;
@@ -197,7 +198,7 @@ td, th {
     display: none; }
 
   .btn > .caret, .dropup > .btn > .caret {
-    border-top-color: black !important; }
+    border-top-color: #000 !important; }
 
   .label {
     border: 1px solid #000; }
@@ -206,15 +207,14 @@ td, th {
     border-collapse: collapse !important; }
 
   .table td, .table th {
-    background-color: white !important; }
+    background-color: #fff !important; }
 
   .table-bordered td, .table-bordered th {
-    border: 1px solid #dddddd !important; } }
+    border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url(../fonts/glyphicons-halflings-regular.eot);
   src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1024,7 +1024,7 @@ td, th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -4297,24 +4297,18 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
-
   to {
     background-position: 0 0; } }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
-
   to {
     background-position: 0 0; } }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
-
   to {
     background-position: 0 0; } }
-
 .progress {
   height: 20px;
   margin-bottom: 20px;
@@ -5332,7 +5326,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   filter: alpha(opacity=50);
   opacity: .5; }
 
@@ -5406,8 +5400,8 @@ button.close {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: black \9;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #000 \9;
+  background-color: transparent;
   border: 1px solid #fff;
   border-radius: 10px; }
 
@@ -5494,7 +5488,6 @@ button.close {
 
 @-ms-viewport {
   width: device-width; }
-
 .visible-lg, .visible-md, .visible-sm, .visible-xs {
   display: none !important; }
 
@@ -5636,3 +5629,59 @@ button.close {
 /*# sourceMappingURL=bootstrap.min.css.map */
 body {
   font-family: 'Lato', sans-serif; }
+
+section.intro {
+  background: url("../../images/patiserie-bg.jpg") no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  section.intro header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    section.intro header nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+      section.intro header nav ul li {
+        display: inline-block;
+        font-family: 'Crete Round', serif; }
+        section.intro header nav ul li a {
+          display: block;
+          padding: 20px 20px;
+          color: #fff; }
+  section.intro .inner {
+    margin: 150px 0 200px 0; }
+    section.intro .inner .content {
+      text-align: center;
+      color: #fff; }
+      section.intro .inner .content h2 {
+        font-family: 'Crete Round', serif;
+        color: inherit;
+        font-size: 3em;
+        margin-bottom: 20px; }
+      section.intro .inner .content p {
+        color: inherit;
+        font-size: 1.3em; }
+    section.intro .inner .info {
+      margin-top: 50px;
+      text-align: center; }
+      section.intro .inner .info h3 {
+        font-family: 'Crete Round', serif;
+        color: #fff; }
+      section.intro .inner .info .address address {
+        font-size: 1.1em;
+        color: #fff; }
+      section.intro .inner .info .contact p {
+        font-size: 1.1em;
+        color: #fff; }
+        section.intro .inner .info .contact p span {
+          color: #e6e6e6; }
+      section.intro .inner .info .contact a.btn {
+        background: none;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        color: #fff; }
+        section.intro .inner .info .contact a.btn:hover {
+          background-color: #CD7F8D; }
+
+/*# sourceMappingURL=main.css.map */
