@@ -73,9 +73,29 @@ section.intro {
 			margin-top: 50px;
 			text-align: center;
 
+			i {
+				font-size: 2.5em;
+				color: $color-primary;
+			}
+
 			h3 {
 				font-family: 'Crete Round', serif;
 				color: #fff;
+			}
+
+
+			a {
+				&.btn {
+					background: none;
+					border: 2px solid rgba(255,255,255,.2);
+					color: #fff;
+					font-weight: 600;
+
+					&:hover {
+						background-color: #fff;
+						color: $color-primary;
+					}
+				}
 			}
 
 			.address {
@@ -94,19 +114,21 @@ section.intro {
 						color: darken(white, 10%);
 					}
 				}
-				
-				a {
-					&.btn {
-						background: none;
-						border: 2px solid rgba(255,255,255,.2);
-						color: #fff;
-
-						&:hover {
-							background-color: $color-primary;
-						}
-					}
-				}
 			}
+		}
+	}
+}
+
+.gallery-section {
+	background: url("../../images/pink_rice.png") repeat;
+	padding-top: 15px;
+
+	.img-container {
+		border: 2px solid darken(white, 10%);
+		margin-bottom: 15px;
+
+		img {
+			width: 100%;
 		}
 	}
 }
