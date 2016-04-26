@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+
 @import "bootstrap.min";
 @import "mixins";
+
+
+
+$color-primary: #CD7F8D;
+$color-secondary: blue;
 
 $color-blue-dark-1: #215682;
 $color-blue-dark-2: #2d68a1;
@@ -15,4 +22,50 @@ $color-white-2: #f2f2f2;
 
 body {
 	font-family: 'Lato', sans-serif;
+}
+
+section.intro {
+	@include full-background-image("../../images/patiserie-bg.jpg", top, center, fixed);
+	min-height: 100vh;
+
+	header {
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		nav {
+			ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				text-align: center;
+
+				li {
+					display: inline-block;
+					font-family: 'Crete Round', serif;
+
+					a {
+						display: block;
+						padding: 20px 20px;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.content {
+		text-align: center;
+		color: #fff;
+		margin-top: 150px;
+
+		h2 {
+			font-family: 'Crete Round', serif;
+			color: inherit;
+			font-size: 3em;
+			margin-bottom: 20px;
+		}
+
+		p {
+			color: inherit;
+			font-size: 1.3em;
+		}
+	}
 }
