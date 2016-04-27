@@ -29,7 +29,7 @@
 					<div class="col-lg-8 col-lg-offset-2">
 						<div class="inner">
 							<div class="content">
-								<h2>Meydan Dondurmasi</h2>
+								<h2>Meydan Dondurma & Waffle</h2>
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et turpis egestas velit placerat accumsan. Pellentesque urna nulla, egestas sit amet dolor nec, tinc
 								</p>
@@ -82,11 +82,34 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2">
+						<div id="gallery" style="display:none;">
+
+							<img alt="Image 1 Title" src="http://placehold.it/300x400"
+									 data-image="http://placehold.it/300x400"
+									 data-description="Image 1 Description">
+
+							<img alt="Image 2 Title" src="http://placehold.it/300x400"
+									 data-image="http://placehold.it/300x400"
+									 data-description="Image 2 Description">
+
+						</div>
 
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<script src="assets/js/jquery-1.12.0.min.js"></script>
+		<script src="assets/js/unitegallery.min.js"></script>
+		<script src="assets/js/ug-theme-tiles.js"></script>
+		<script type="text/javascript">
+
+			jQuery(document).ready(function(){
+				jQuery("#gallery").unitegallery();
+			});
+
+		</script>
+
 	</body>
 </html>
 
